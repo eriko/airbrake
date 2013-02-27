@@ -7,7 +7,7 @@ module Airbrake
         :http_open_timeout, :http_read_timeout, :ignore, :ignore_by_filters,
         :ignore_user_agent, :notifier_name, :notifier_url, :notifier_version,
         :params_filters, :project_root, :port, :protocol, :proxy_host,
-        :proxy_pass, :proxy_port, :proxy_user, :secure, :use_system_ssl_cert_chain,
+        :proxy_pass, :proxy_port, :proxy_user, :secure, :suburi, :use_system_ssl_cert_chain,
         :framework, :user_information, :rescue_rake_exceptions, :rake_environment_filters].freeze
 
     # The API key for your project, found on the project edit form.

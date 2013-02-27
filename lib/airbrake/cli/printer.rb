@@ -19,6 +19,7 @@ Options:
   -m, [--message=MESSAGE]        # Error message. Default: "I've made a huge mistake"
   -k, [--api-key=API_KEY]        # Api key of your Airbrake application.
   -h, [--host=HOST]              # URL of the Airbrake API server. Default: api.airbrake.io
+  -s, [--suburi=HOST]            # If a suburi installation is used. Default: ""
   -p, [--port=PORT]              # Port of the Airbrake API server. Default: 80
   -t, [--auth-token=AUTH_TOKEN]  # The auth token used for API requests.
   -a, [--account=ACCOUNT]        # The account used for API requests.
