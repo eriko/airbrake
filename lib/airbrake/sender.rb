@@ -29,6 +29,7 @@ module Airbrake
         :proxy_pass,
         :protocol,
         :host,
+        :suburi,
         :port,
         :secure,
         :use_system_ssl_cert_chain,
@@ -89,6 +90,7 @@ module Airbrake
                 :proxy_pass,
                 :protocol,
                 :host,
+                :suburi,
                 :port,
                 :secure,
                 :use_system_ssl_cert_chain,
@@ -132,7 +134,7 @@ module Airbrake
     end
 
     def url
-      URI.parse("#{protocol}://#{host}:#{port}").merge(api_url)
+      URI.parse("#{protocol}://#{host}:#{port}#{suburi ? '/'+suburi : ''}").merge(api_url)
     end
 
     def log(opts = {})
