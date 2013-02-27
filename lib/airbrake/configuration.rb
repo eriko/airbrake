@@ -22,6 +22,9 @@ module Airbrake
     # The host to connect to (defaults to airbrake.io).
     attr_accessor :host
 
+    # The suburi to access (optional).
+    attr_accessor :suburi
+
     # The port on which your Airbrake server runs (defaults to 443 for secure
     # connections, 80 for insecure connections).
     attr_accessor :port
